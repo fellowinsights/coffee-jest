@@ -8,7 +8,7 @@ module.exports = {
       {
         bare: true,
         sourceMap: true,
-        transpile: loadBabelConfig()
+        transpile: Object.assign({}, loadBabelConfig(), { filename: path })
       }
     )
     return {
